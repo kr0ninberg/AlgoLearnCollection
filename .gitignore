@@ -1,0 +1,64 @@
+# Compiled binaries
+*.exe
+*.out
+*.app
+*.o
+*.obj
+*.so
+*.dll
+*.dylib
+
+# Build directory
+**/build/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Language-specific
+# C/C++
+*.a
+*.lib
+*.pdb
+*.ilk
+*.exp
+
+# Python
+**/__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+**/.pytest_cache/
+**/venv/
+**/env/
+
+# JavaScript/Node.js
+**/node_modules/
+**/npm-debug.log*
+**/yarn-debug.log*
+**/yarn-error.log*
+
+# Go
+*.test
+*.prof
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+*.bak
+*.backup
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
