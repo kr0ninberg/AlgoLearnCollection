@@ -4,6 +4,9 @@ project(AlgoLearn)
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+# Define to switch main functionality
+add_definitions(-DTESTS)
+
 # Find required packages
 find_package(GTest REQUIRED)
 
