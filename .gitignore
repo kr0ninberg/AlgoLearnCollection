@@ -10,6 +10,7 @@
 
 # Build directory
 **/build/
+**/.cache/
 
 # IDE and editor files
 .vscode/
