@@ -10,8 +10,15 @@ find_package(GTest REQUIRED)
 # Include directories
 include_directories(${GTEST_INCLUDE_DIRS})
 
+# Collect all test files
+file(GLOB_RECURSE TEST_SOURCES
+    "algorithms/tests/*.cpp"
+    "datastructures/tests/*.cpp"
+    "excercises/tests/*.cpp"
+)
+
 # Create test executable
-add_executable(${PROJECT_NAME} main.cpp algorithms/tests/basic_test.cpp)
+add_executable(${PROJECT_NAME} main.cpp ${TEST_SOURCES})
 
 # Link libraries
 target_link_libraries(${PROJECT_NAME} ${GTEST_LIBRARIES} pthread)
