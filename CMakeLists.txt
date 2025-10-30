@@ -11,7 +11,7 @@ add_definitions(-DTESTS)
 find_package(GTest REQUIRED)
 
 # Include directories
-include_directories(${GTEST_INCLUDE_DIRS})
+include_directories(${GTEST_INCLUDE_DIRS}, ${CMAKE_SOURCE_DIR})
 
 # Collect all test files
 file(GLOB_RECURSE TEST_SOURCES
