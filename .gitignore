@@ -10,6 +10,7 @@
 
 # Build directory
 **/build/
+**/cmake-build*/
 **/.cache/
 
 # IDE and editor files
