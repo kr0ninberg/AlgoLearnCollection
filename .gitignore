@@ -15,7 +15,7 @@
 
 # IDE and editor files
 .vscode/
-.idea/
+**/.idea/
 *.swp
 *.swo
 *~
@@ -65,3 +65,7 @@ Thumbs.db
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# custom
+.editorconfig
+**/.kiro
