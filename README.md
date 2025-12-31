@@ -126,6 +126,7 @@ Collection of simple algorithms, datastructures, excercises and small project ma
 - [ ] Imgui
 - [ ] Qt
 - [ ] Regex
+- [ ] Emscripten (wasm)
 
 #### Базы данных
 
@@ -248,3 +249,4 @@ Collection of simple algorithms, datastructures, excercises and small project ma
 - [ ] Thread pool
 - [ ] Memory allocator
 - [ ] Simple database engine
+- [ ] Сервис высокоскоростного обмена файлами
