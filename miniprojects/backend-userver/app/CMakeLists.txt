@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.14)
-project(userver-samples-hello_service CXX)
+project(hello_service CXX)
 
 # /// [find_userver]
 find_package(
