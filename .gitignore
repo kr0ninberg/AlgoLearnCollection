@@ -71,3 +71,5 @@ Thumbs.db
 **/.kiro
 **/.env
 **/*.session
+venv
+.vs
