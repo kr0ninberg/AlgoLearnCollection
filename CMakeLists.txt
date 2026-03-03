@@ -10,9 +10,6 @@ add_definitions(-DTESTS)
 # Find required packages
 find_package(GTest REQUIRED)
 
-# Include directories
-include_directories(${GTEST_INCLUDE_DIRS}, ${CMAKE_SOURCE_DIR})
-
 # Collect all test files
 file(GLOB_RECURSE TEST_SOURCES
     "algorithms/tests/*.cpp"
@@ -23,8 +20,13 @@ file(GLOB_RECURSE TEST_SOURCES
 # Create test executable
 add_executable(${PROJECT_NAME} main.cpp ${TEST_SOURCES})
 
+target_include_directories(${PROJECT_NAME}
+    PRIVATE
+    ${CMAKE_SOURCE_DIR}
+)
+
 # Link libraries
-target_link_libraries(${PROJECT_NAME} ${GTEST_LIBRARIES} pthread)
+target_link_libraries(${PROJECT_NAME} GTest::gtest GTest::gtest_main pthread)
 
 # Enable testing
 enable_testing()
