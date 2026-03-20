@@ -6,6 +6,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 find_package(GTest REQUIRED)
 find_package(raylib REQUIRED)
+find_package(Boost)
 
 file(GLOB_RECURSE SOURCES
         "sources/*.cpp"
@@ -13,7 +14,7 @@ file(GLOB_RECURSE SOURCES
 
 add_executable(${PROJECT_NAME} main.cpp ${SOURCES})
 
-target_link_libraries(${PROJECT_NAME} raylib gtest::gtest)
+target_link_libraries(${PROJECT_NAME} raylib gtest::gtest boost::boost)
 
 target_include_directories(${PROJECT_NAME}
         PRIVATE
