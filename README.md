@@ -118,9 +118,10 @@ Collection of simple algorithms, datastructures, excercises and small project ma
 - [ ] Boost.Asio
 - [ ] Boost.Hana
 - [ ] Boost.Fiber
+- [ ] Boost.PFR
 - [ ] Poco
 - [ ] Crow / Drogon (HTTP frameworks)
-- [ ] CMake (build system)
+- [x] CMake (build system)
 - [ ] Conan / vcpkg (package managers)
 - [ ] CUDA
 - [ ] Imgui
@@ -149,8 +150,8 @@ Collection of simple algorithms, datastructures, excercises and small project ma
 
 #### Контейнеры
 
-- [ ] Docker
-- [ ] Docker Compose
+- [x] Docker
+- [x] Docker Compose
 - [ ] Kubernetes
 
 #### Очереди
@@ -178,7 +179,7 @@ Collection of simple algorithms, datastructures, excercises and small project ma
 
 #### Тестирование
 
-- [ ] Google Test (gtest)
+- [x] Google Test (gtest)
 - [ ] Google Mock (gmock)
 - [ ] Catch2
 - [ ] Benchmark (Google Benchmark)
@@ -224,7 +225,7 @@ Collection of simple algorithms, datastructures, excercises and small project ma
 
 - [ ] Custom allocators
 - [ ] Memory pools
-- [ ] Smart pointers (unique_ptr, shared_ptr, weak_ptr)
+- [x] Smart pointers (unique_ptr, shared_ptr, weak_ptr)
 - [x] RAII
 
 #### Системное программирование
