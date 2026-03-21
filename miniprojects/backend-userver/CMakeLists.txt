@@ -2,11 +2,13 @@ cmake_minimum_required(VERSION 3.14)
 project(hello_service CXX)
 
 # /// [find_userver]
-find_package(
-    userver
-    COMPONENTS core
-    REQUIRED
-)
+#find_package(
+#    userver
+#    COMPONENTS core
+#    REQUIRED
+#)
+add_subdirectory(userver)
+userver_setup_environment()
 # Note: If userver was added via add_subdirectory(path/to/userver), then the userver_setup_environment() should be
 # called here. /// [find_userver]
 

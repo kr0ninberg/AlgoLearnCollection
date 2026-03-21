@@ -1,0 +1,3 @@
+[submodule "miniprojects/backend-userver/userver"]
+	path = miniprojects/backend-userver/userver
+	url = https://github.com/userver-framework/userver.git
