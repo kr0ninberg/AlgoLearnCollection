@@ -90,10 +90,16 @@ void TestPoints(
     const vec& points,
     vector<int>& result)
 {
+    BoundingBox bb(polygon);
     for (const auto& point : points) {
-        result.push_back(PointInPolygon(polygon, point) ? 1 : 0);
+        if (bb.Contains(point) && PointInPolygon(polygon, point))
+            result.push_back(1);
+        else
+            result.push_back(0);
     }
 }
+
+#include <cmath>
 
 bool PointOnSegment(Point a, Point b, Point p)
 {
