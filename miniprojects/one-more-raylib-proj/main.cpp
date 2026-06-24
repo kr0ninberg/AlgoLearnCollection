@@ -1,5 +1,4 @@
 #include <raylib.h>
-#include "sources/Simulation.h"
 
 #include "raylib.h"
 
@@ -20,4 +19,4 @@ int main(void)
 
     CloseWindow();
     return 0;
-}}
+}
